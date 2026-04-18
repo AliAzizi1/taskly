@@ -1,0 +1,16 @@
+
+@keyframes alert{
+    from{ 
+        right: -32px;
+        opacity: '0';
+    }
+
+    to{ 
+        right: 32px;
+        opacity: 1; 
+    }
+}
+
+.alertAnimation {
+    animation: alert 0.5s ease-out;
+}

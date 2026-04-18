@@ -1,0 +1,28 @@
+
+@keyframes overlay{
+    from{ 
+        opacity: 0;
+    }
+
+    to{ 
+        opacity: 1; 
+    }
+}
+
+@keyframes box{
+    from{ 
+        right: -100%;
+    }
+
+    to{ 
+        right: 0; 
+    }
+}
+
+.overlayAnimation {
+    animation: overlay 0.5s ease-out;
+}
+
+.boxAnimation {
+    animation: box 0.5s ease-out;
+}
