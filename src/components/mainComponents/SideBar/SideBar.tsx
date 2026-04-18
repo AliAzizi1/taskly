@@ -61,9 +61,11 @@ const SideBar = ({size}: Props) => {
                     <span className="text-sm mt-1 mb-2 text-red-800">دسته بندی ها</span>
                 )}
                 <div className="w-fuul lg:max-h-64 lg:overflow-y-auto">
-                    {tags?.map(item => (
+                    {tags ? tags.map(item => (
                         <SideBarItem name={item.name || ''} isOpen={open} pathName={`/tagList/${item.id}`} subMenu={false} />
-                    ))}
+                    )) : (
+                      <span className="text-sm opacity-50">هیچ ایتمی نیست!</span>
+                    )}
                 </div>
                 {/* <SideBarItem name="کارهای انجام شده" isOpen={open} pathName={'/done'} subMenu={false} />
                 <SideBarItem name="کارهای انجام نشده" isOpen={open} pathName={'/noDone'} subMenu={false} />
